@@ -76,39 +76,37 @@ Una calculadora desarrollada en React Native con TypeScript para Android que per
 ### Personalización
 Si deseas modificar los colores o estilos, puedes ajustar las propiedades color en el archivo CalculadoraScreen.tsx en cada BotonOperacion.
 
-### Notas
+## Notas
 Las siguientes comandos, fueron utilizados para la creación y subida del proyecto.
-En cmd
-cd D:\ITSQMET\13-APLICACIONES_MOVILES_II\ejercicios
-npx expo init moviles2_examen_drogel
+
+### Crear Proyecto
+- En cmd cd D:\ITSQMET\13-APLICACIONES_MOVILES_II\ejercicios
+- npx expo init moviles2_examen_drogel
 	blank (Typescript)
-npm install -g react-native-cli
-npm install @react-navigation/native
-npm install @react-navigation/stack
-npm install react-native-gesture-handler
-npx expo start
+- npm install -g react-native-cli
+- npm install @react-navigation/native
+- npm install @react-navigation/stack
+- npm install react-native-gesture-handler
+- npx expo start
 
-moviles2_examen_drogel
+### Subir GIT
+- https://github.com/oni-DARC/moviles2_examen_drogel.git
+- echo "# moviles2_examen_drogel" >> README.md
+- git init
+- git add README.md
+- git commit -m "first commit"
+- git branch -M main
+- git remote add origin https://github.com/oni-DARC/moviles2_examen_drogel.git
+- git push -u origin main
 
-https://github.com/oni-DARC/moviles2_examen_drogel.git
-
-echo "# moviles2_examen_drogel" >> README.md
-git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/oni-DARC/moviles2_examen_drogel.git
-git push -u origin main
-
-Generar apk
-expo login
-npm install -g eas-cli
-npx expo prebuild
-npm install expo-system-ui
-eas login
-// crear el eas.json e incluir el "eas:android":"eas build -p android --profile preview" en el package.json
-npm run eas:android
-
+### Generar apk
+- expo login
+- npm install -g eas-cli
+- npx expo prebuild
+- npm install expo-system-ui
+- eas login
+- // crear el eas.json e incluir el "eas:android":"eas build -p android --profile preview" en el package.json
+- npm run eas:android
 
 ## Contacto
 Para cualquier pregunta o sugerencia, por favor contacta a diego.a.rogel@gmail.com
