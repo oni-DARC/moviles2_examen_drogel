@@ -38,6 +38,9 @@ Una calculadora desarrollada en React Native con TypeScript para Android que per
 <video controls src="example/03-VideoUsoAplicativo.mp4" title="Video Uso Aplicativo"></video>
 > ![Video Uso](example/03-VideoUsoAplicativo.mp4)
 
+**Enlace Video Uso**: EL vídeo pesa 13mb y no fue factible subirlo en el aula virtual. EL vídeo se encuentra disponible a través del siguiente enlace:
+  - https://drive.google.com/drive/folders/1kAO7-Gfux-M_77GNLjP-JO7SLQoRBI9-?usp=drive_link
+
 ## Guía de Uso
 
 1. **Ingresar Números**: Usa los botones numéricos (0-9) para ingresar números en la calculadora.
