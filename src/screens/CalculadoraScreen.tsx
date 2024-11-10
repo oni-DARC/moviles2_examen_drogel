@@ -50,9 +50,6 @@ const CalculadoraScreen = () => {
 
   return (
     <View style={styles.contenedor}>
-      <View style={{ alignItems: "center", marginBottom: 20 }}>
-        <Image source={require("./assets/logoITSQMET.png")} style={{ width: 300, height: 100 }} />
-      </View>
       <DisplayResultado valor={input} historial={historial} />
       <View style={styles.filaBotones}>
         <BotonOperacion titulo="C" color="#14103d" onPress={limpiar} />
