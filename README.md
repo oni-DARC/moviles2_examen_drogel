@@ -35,7 +35,8 @@ Una calculadora desarrollada en React Native con TypeScript para Android que per
 **Pantalla Principal**  
 > ![Pantalla Principal](example/01-PaginaPrincipal.jpg)
 > ![Operaciones](example/02-Operaciones.jpg)
-> ![Video Uso](example/03-Aplicativo.mp4)
+<video controls src="example/03-VideoUsoAplicativo.mp4" title="Video Uso Aplicativo"></video>
+> ![Video Uso](example/03-VideoUsoAplicativo.mp4)
 
 ## Guía de Uso
 
@@ -46,6 +47,7 @@ Una calculadora desarrollada en React Native con TypeScript para Android que per
   - **Potencia**: Eleva el valor anterior al número actual como exponente.
 4. **Historial**: Muestra los cálculos realizados durante la sesión actual. Al presionar "C" se borra el historial y el valor en pantalla.
 5. **Manejo de Errores**: Si intentas dividir entre cero o ingresas valores no válidos, la aplicación mostrará un mensaje de error.
+6. **Limpiar**: Usar el botón C para borrar el último dato ingresado, si necesita realizar una nueva operación y no quiere reutilzar un valor ingresado para otra operación.
 
 ## Instrucciones de Instalación
 
@@ -66,13 +68,47 @@ Una calculadora desarrollada en React Native con TypeScript para Android que per
   expo start
 
 ### Estructura del Proyecto
-**src/screens/CalculadoraScreen.tsx**: Pantalla principal de la calculadora.
-**src/components/BotonOperacion.tsx**: Componente de los botones de la calculadora.
-**src/components/DisplayResultado.tsx**: Componente que muestra el valor en pantalla y el historial de cálculos.
-**src/utils/calculadora.ts**: Funciones de cálculo para cada operación matemática.
+- **src/screens/CalculadoraScreen.tsx**: Pantalla principal de la calculadora.
+- **src/components/BotonOperacion.tsx**: Componente de los botones de la calculadora.
+- **src/components/DisplayResultado.tsx**: Componente que muestra el valor en pantalla y el historial de cálculos.
+- **src/utils/calculadora.ts**: Funciones de cálculo para cada operación matemática.
 
 ### Personalización
 Si deseas modificar los colores o estilos, puedes ajustar las propiedades color en el archivo CalculadoraScreen.tsx en cada BotonOperacion.
+
+### Notas
+Las siguientes comandos, fueron utilizados para la creación y subida del proyecto.
+En cmd
+cd D:\ITSQMET\13-APLICACIONES_MOVILES_II\ejercicios
+npx expo init moviles2_examen_drogel
+	blank (Typescript)
+npm install -g react-native-cli
+npm install @react-navigation/native
+npm install @react-navigation/stack
+npm install react-native-gesture-handler
+npx expo start
+
+moviles2_examen_drogel
+
+https://github.com/oni-DARC/moviles2_examen_drogel.git
+
+echo "# moviles2_examen_drogel" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/oni-DARC/moviles2_examen_drogel.git
+git push -u origin main
+
+Generar apk
+expo login
+npm install -g eas-cli
+npx expo prebuild
+npm install expo-system-ui
+eas login
+// crear el eas.json e incluir el "eas:android":"eas build -p android --profile preview" en el package.json
+npm run eas:android
+
 
 ## Contacto
 Para cualquier pregunta o sugerencia, por favor contacta a diego.a.rogel@gmail.com
